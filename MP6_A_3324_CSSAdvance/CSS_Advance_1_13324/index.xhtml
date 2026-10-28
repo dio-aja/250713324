@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pendaftaran Anggota Mahasiswa Baru</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Formulir Pendataan Mahasiswa Baru</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
+
+                <tr>
+                    <td class="label-col">
+                        <label for="namamhs"><strong>Nama Lengkap Mahasiswa</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="namamhs" name="namamhs" size="30" />
+                    </td>
+                </tr>
+
+                <tr class="hlRow">
+                    <td class="label-col">
+                        <strong>Jenis Kelamin</strong>
+                    </td>
+                    <td> 
+                        <input type="radio" id="laki" name="jk" value="Laki-Laki"/><label for="laki">Pria (Laki-Laki)</label>
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan"/><label for="perempuan">Wanita (Perempuan)</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">
+                        <label for="prodi"><strong>Program Studi Tujuan</strong></label>
+                    </td>
+                    <td>
+                        <select id="prodi" name="prodi">
+                            <option>Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Industri</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr class="hlRow">
+                    <td class="label-col">
+                        <label for="email"><strong>Alamat Email</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="email" name="email" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">
+                        <label for="telepon"><strong>No. HP</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="telepon" name="telepon" size="30" />
+                    </td>
+                </tr>
+
+                <tr class="hlRow">
+                    <td class="label-col">
+                        <label for="password"><strong>Kata Sandi / Password</strong></label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-col">
+                        <label for="photo"><strong>Upload Foto</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="photo" name="photo" size="18" accept="image/gif, image/jpg, image/png" />
+                    </td>
+                </tr>
+
+                <tr class="hlRow">
+                    <td class="label-col">
+                        <label for="namasmu"><strong>Asal Sekolah</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="namasmu" name="namasmu" size="30" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label-col" style="vertical-align: top;">
+                        <strong>Minat &amp; Hobi Kegemaran</strong>
+                    </td>
+                    <td>
+                        <p>
+                            <strong>Genre Musik Favorit:</strong><br />
+                            <input type="checkbox" id="musik1" name="musik" value="Pop" />
+                            <label for="musik1">Pop</label>
+                            <input type="checkbox" id="musik2" name="musik" value="Rock" />
+                            <label for="musik2">Rock</label>
+                            <input type="checkbox" id="musik3" name="musik" value="Jazz" />
+                            <label for="musik3">Jazz</label>
+                        </p>
+
+                        <p>
+                            <strong>Kategori Film Favorit:</strong><br />
+                            <input type="checkbox" id="film1" name="film" value="Drama" />
+                            <label for="film1">Drama</label>
+                            <input type="checkbox" id="film2" name="film" value="Action" />
+                            <label for="film2">Action</label>
+                            <input type="checkbox" id="film3" name="film" value="Sci-Fi" />
+                            <label for="film3">Sci-Fi</label>
+                        </p>
+                    </td>
+                </tr>
+
+                <tr class="hlRow">
+                    <td class="label-col" style="vertical-align: top;">
+                        <label for="resume">
+                            <strong>Ringkasan Profil / Resume</strong>
+                        </label>
+                    </td>
+                    <td>
+                        <textarea id="resume" name="resume" rows="10" cols="23"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" name="simpan" value="Kirim Data Registrasi" class="btn-submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
